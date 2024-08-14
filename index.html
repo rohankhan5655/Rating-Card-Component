@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>  
+<div class="container">
+  <div class="card animate__animated animate__fadeInTopLeft ">
+    <div class="box-star">
+      <img src="./images/icon-star.svg" alt="icon-star">
+    </div>
+    <div class="heading">
+      <h2>How did we do?</h2>
+      
+    </div>
+    <div class="para ">
+      <p>Please let us know how we did with your support request.All feedback is appreciated to help us<br>improve our oftering.</p>
+  
+    </div>
+    <p class="error hide">Please rate first</p>
+  
+    <div class="flex">
+      <div class="number-box">
+      1
+
+      </div>
+      <div class="number-box">
+        2
+        </div>
+        <div class="number-box">
+          3
+          </div>
+          <div class="number-box">
+            4
+            </div>
+            <div class="number-box">
+              5
+              </div>
+              
+    </div>
+    <div class="button">
+      <button>SUBMIT  </button>
+    </div>
+  </div>
+  <div class="card1 animate__animated animate__zoomInDown hide">
+   <div class="thx-illus">
+    <img src="./images/illustration-thank-you.svg" alt="illustration-thank-you">
+    <div class="rating">
+      <span id="selectedRating"></span>
+    </div>
+   </div>
+   <div class="thank">
+    <p>Thank you!</p>
+  </div>
+    <div class="des">
+      <p>We appreciate you taking the time to give a rating.<br>If you ever need more support,don't hesitate to <br> get in touch!.
+      </p>
+   </div>
+  </div>
+</div>
+  <script src="./script.js"></script>
+</body>
+</html>

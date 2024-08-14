@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card {
+  width: 21rem;
+  margin: 0px 2rem;
+  background-color: hsla(213, 20%, 18%, 0.662);
+  height: 330px;
+  border: none;
+  border-radius: 22px;
+}
+.card .box-star {
+  margin: 28px 0px 25px 28px;
+  border-radius: 50%;
+  width: fit-content;
+  padding: 13px;
+  height: fit-content;
+  display: flex;
+  background-color: hsla(217, 12%, 63%, 0.105);
+  justify-content: center;
+  align-items: center;
+}
+.card .box-star img {
+  width: 14px;
+}
+.card .heading {
+  margin-left: 28px;
+  color: hsl(0, 0%, 100%);
+}
+.card .para p {
+  margin: 10px 0px 0px 28px;
+  font-size: 13px;
+  width: 285px;
+  line-height: 20px;
+  color: hsl(217, 12%, 63%);
+  font-weight: 400;
+}
+.card .flex {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 22px 0px 20px 28px;
+}
+.card .flex .number-box {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  background-color: hsla(217, 12%, 63%, 0.105);
+  color: hsl(217, 12%, 63%);
+  font-weight: 700;
+}
+.card .flex .number-box.active {
+  background-color: hsl(25, 97%, 53%);
+  color: black;
+  font-weight: 700;
+}
+.card .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .button button {
+  width: 80%;
+  border-radius: 20px;
+  height: 30px;
+  border: none;
+  font-size: 11px;
+  background-color: hsl(25, 97%, 53%);
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.card button:active {
+  background-color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.card button:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 100%);
+}
+.card .number-box:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(216, 12%, 8%);
+  cursor: pointer;
+}
+@media only screen and (max-width: 400px) {
+  .card .card {
+    max-width: 200px;
+  }
+  .card .para p {
+    margin: 10px 0px 0px 28px;
+    font-size: 12px;
+    width: 275px;
+  }
+  .card .flex {
+    gap: 9px;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.error {
+  color: crimson;
+  position: absolute;
+  margin-left: 28px;
+  font-size: 12px;
+  margin-top: 2px;
+  font-weight: 700;
+}
+
+.card1 {
+  width: 20rem;
+  background-color: hsla(213, 20%, 18%, 0.662);
+  height: 330px;
+  border: none;
+  align-items: center;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 22px;
+}
+.card1 .thx-illus {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card1 .thx-illus img {
+  margin-right: 8px;
+  width: 120px;
+  height: 90px;
+}
+.card1 .thx-illus .rating {
+  width: 160px;
+  padding: 3px;
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: hsla(217, 12%, 63%, 0.067);
+  text-align: center;
+}
+.card1 .thx-illus .rating span {
+  font-size: 12px;
+  color: hsla(25, 97%, 53%, 0.724);
+}
+.card1 .thank {
+  margin-top: 20px;
+  color: hsl(0, 0%, 100%);
+  font-size: 22px;
+  font-weight: 400;
+}
+.card1 .des {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 301px;
+  margin-top: 10px;
+}
+.card1 .des p {
+  color: hsl(217, 12%, 63%);
+  font-size: 13px;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
